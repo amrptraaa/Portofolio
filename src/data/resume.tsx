@@ -88,7 +88,7 @@ export const DATA = {
   projects: [
     {
       title: "Hidupi",
-      href: "https://chatcollect.com",
+      href: "https://www.figma.com/proto/O2PNqxDWWxGMQF9lICBXLw/Hidupi?page-id=0%3A1&node-id=2-3&p=f&viewport=-1667%2C227%2C0.43&t=hdMaNdiC5lTtQGOO-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2%3A3",
       dates: "Dec 2024 - Jan 2025",
       active: true,
       description:
@@ -97,7 +97,7 @@ export const DATA = {
       links: [
         {
           type: "Figma",
-          href: "https://chatcollect.com",
+          href: "https://www.figma.com/proto/O2PNqxDWWxGMQF9lICBXLw/Hidupi?page-id=0%3A1&node-id=2-3&p=f&viewport=-1667%2C227%2C0.43&t=hdMaNdiC5lTtQGOO-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2%3A3",
           icon: <Icons.figma className="size-3" />,
         },
       ],
@@ -106,7 +106,7 @@ export const DATA = {
     },
     {
       title: "Global Village",
-      href: "https://magicui.design",
+      href: "https://www.figma.com/proto/miASHm0ev5wgvhhtXbJEPP/Global-Village?page-id=0%3A1&node-id=2-70&p=f&viewport=-10%2C361%2C0.09&t=wBn4dgdu2l76PkA2-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A70",
       dates: "Oct 2024 - Nov 2024",
       actie: true,
       description:
@@ -115,7 +115,7 @@ export const DATA = {
       links: [
         {
           type: "Figma",
-          href: "https://magicui.design",
+          href: "https://www.figma.com/proto/miASHm0ev5wgvhhtXbJEPP/Global-Village?page-id=0%3A1&node-id=2-70&p=f&viewport=-10%2C361%2C0.09&t=wBn4dgdu2l76PkA2-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A70",
           icon: <Icons.figma className="size-3" />,
         },
       ],

@@ -1,4 +1,3 @@
-import BlurFade from "@/components/magicui/blur-fade";
 import { getBlogPosts } from "@/data/blog";
 import Link from "next/link";
 import Image from "next/image";
@@ -31,14 +30,12 @@ export default async function BlogPage() {
 
   return (
     <section className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16">
-      <BlurFade delay={BLUR_FADE_DELAY}>
-        <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4 tracking-tighter">Blog</h1>
-          <p className="text-muted-foreground text-base sm:text-lg md:text-xl max-w-2xl mx-auto">
-            Menjelajahi ide, berbagi pengetahuan, dan mendokumentasikan perjalanan saya di dunia teknologi
-          </p>
-        </div>
-      </BlurFade>
+      <div className="text-center mb-8 sm:mb-12 md:mb-16">
+        <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4 tracking-tighter">Blog</h1>
+        <p className="text-muted-foreground text-base sm:text-lg md:text-xl max-w-2xl mx-auto">
+          Menjelajahi ide, berbagi pengetahuan, dan mendokumentasikan perjalanan saya di dunia teknologi
+        </p>
+      </div>
       
       <div className="grid gap-6 sm:gap-8">
         {posts
@@ -51,7 +48,7 @@ export default async function BlogPage() {
             return 1;
           })
           .map((post, id) => (
-            <BlurFade delay={BLUR_FADE_DELAY * 2 + id * 0.05} key={post.slug}>
+            <div key={post.slug}>
               <Link
                 href={`/blog/${post.slug}`}
                 className="group block"
@@ -98,7 +95,7 @@ export default async function BlogPage() {
                   </div>
                 </article>
               </Link>
-            </BlurFade>
+            </div>
           ))}
       </div>
     </section>

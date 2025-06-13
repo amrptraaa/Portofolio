@@ -7,7 +7,7 @@ import type { Metadata } from "next/types";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { LoadingOverlay } from "@/components/loading";
-
+import { Suspense } from 'react'
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -67,7 +67,9 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
-            <LoadingOverlay />
+            <Suspense fallback={<div>Loading...</div>}>
+              <LoadingOverlay />
+            </Suspense>
             {children}
             <Navbar />
           </TooltipProvider>
